@@ -6,6 +6,10 @@
   "author": "Simon Renoult <simon.renoult@gmail.com>",
   "license": "MIT",
   "keywords": [],
+  "repository": {
+    "type" : "git",
+    "url" : "git+https://github.com/simonrenoult/{{name}}.git"
+  },
   "engines": {
     "node": ">= {{node}}",
     "npm": ">= {{npm}}"
