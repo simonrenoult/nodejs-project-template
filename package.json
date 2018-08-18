@@ -1,0 +1,32 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.1",
+  "description": "{{description}}",
+  "main": "index.js",
+  "author": "Simon Renoult <simon.renoult@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "engines": {
+    "node": ">= {{node}}",
+    "npm": ">= {{npm}}"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "version:check": "check-node-version --package",
+    "prestart": "npm run version:check",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "check-node-version": "3.2.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "mocha": "5.1.0",
+    "prettier": "1.14.2"
+  }
+}
